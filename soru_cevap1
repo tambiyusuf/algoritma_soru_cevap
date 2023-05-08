@@ -1,0 +1,19 @@
+#Verilen Bir Metinden " " çıkartma 
+
+metin1 ="Dünyamızda 1900’lü yıllardan günümüze kadar dil öğretiminde çeşitli metinler kullanılmıştır. Bunlar “ edebi metinler, üretilmiş metinler, özgün ve özel metinler ” başlıkları altında toplanmıştır.Metinlerin seçimi dil öğretim yaklaşım ve yöntemlerine göre değişmektedir. Her yaklaşım kendine özgü metin kullanmıştır.Geleneksel yaklaşımda dil bilgisi kuralları, atasözleri, edebiyat, genel kültür gibi konuların öğretimine ağırlık verildiğinden edebi metinler kullanılmıştır. "
+
+metinson =("")
+metinlist = list(metin1) #metin1'i yeni bir liste oluşturup içine atadık
+
+
+for karakter in metin1:
+    if karakter == " ":
+        metinlist.remove(karakter) #Silinmesini istediğimiz karakterikn kendisini remove.("xxxx") şeklinde veriyoruz.
+    else:
+        metinson = metinson+karakter
+
+print(metinson)
+
+
+
+
